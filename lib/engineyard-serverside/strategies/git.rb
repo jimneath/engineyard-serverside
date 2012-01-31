@@ -15,6 +15,11 @@ module EY
             strategy.create_revision_file_command(c.release_path)
           end
 
+          def gc_repository_cache
+            info "~> Finishing... Garbage collecting cached git repository to reduce disk usage."
+            logged_system("#{git} gc")
+          end
+
           def short_log_message(revision)
             strategy.short_log_message(revision)
           end

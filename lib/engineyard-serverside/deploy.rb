@@ -47,6 +47,7 @@ module EY
         disable_maintenance_page
 
         cleanup_old_releases
+        gc_repository_cache
         debug "Finished deploy at #{Time.now.asctime}"
       rescue Exception
         debug "Finished failing to deploy at #{Time.now.asctime}"

@@ -2,7 +2,7 @@
 
 ## NEXT
 
-  *
+  * Garbage collect git at the end of each deploy. First one may take a while but the next ones will be faster and reduce extra disk usage.
 
 ## v1.5.27 (2012-01-27)
 
